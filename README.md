@@ -66,9 +66,12 @@ python -m mixturelab fit --output fresh.json
 python -m mixturelab audit --report fresh.json
 python -m mixturelab.figure
 node --test tests/*.cjs
+python examples/check_installed.py
 ```
 
 The real-Chrome test requires Chrome and Node 22+; set `CHROME_BIN` if needed. It exercises the actual page, not a DOM mock. Native and browser arithmetic are compared over all eight models and all 178 source rows: 1,424 density evaluations and every component responsibility. Tests also cover an independent scalar/2D Gaussian likelihood, 100 randomized numerical precision-space KKT checks, 40 analytic rotated 2D clipping oracles, explicit EM identities, holdout-poisoning isolation, original-unit transformations, zero budgets, invalid data and the controls. Float tolerances are stated in code; exact bitwise refit portability is not promised.
+
+The full installed-suite check builds a wheel in a clean environment and runs all 45 Python tests outside the checkout. It checks all twelve installed module origins before and after, compares 11 full CLI reports through both entrypoints, and compares the complete fresh report containing all 24 refits. The suite also reproduces the figure and geometry references. Run it with `python examples/check_installed.py`.
 
 The wheel check imports all twelve modules and runs all nine CLI commands outside the source tree, including 24 complete fresh refits and both saved/fresh audits:
 
