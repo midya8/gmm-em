@@ -1,14 +1,14 @@
-# MixtureLab
+# Gmm em
 
 Gaussian-mixture EM from scratch, with full and diagonal covariances, recorded objective checks and a browser inspector. A rising likelihood does not mean the components are real categories.
 
-[Interactive inspector](https://midya8.github.io/mixturelab/) · [Equations and protocol](METHOD.md) · [Complete report](mixturelab/artifacts/report.json) · [Tests](tests)
+[Interactive inspector](https://midya8.github.io/gmm-em/) · [Equations and protocol](METHOD.md) · [Complete report](mixturelab/artifacts/report.json) · [Tests](tests)
 
 Fit a real 13-dimensional density from public chemical measurements. Edit any feature in the browser and recompute the component posterior using a separate scalar JavaScript implementation. No sklearn mixture estimator, model API, downloaded weights, private dataset or classification claim.
 
 ## Conditional inference
 
-[Open the conditional inspector](https://midya8.github.io/mixturelab/conditional.html) · [Conditional algebra, controls and sources](CONDITIONAL.md)
+[Open the conditional inspector](https://midya8.github.io/gmm-em/conditional.html) · [Conditional algebra, controls and sources](CONDITIONAL.md)
 
 Condition the same frozen Gaussian mixtures on any observed-coordinate subset. Log marginal evidence reweights the components; Schur complements give conditional means and covariances. The inspector retains within- and between-component spread, a prior-marginal comparison, complete numerical JSON and empty-dimensional limits. Synthetic controls show a conditional mean in a low-density gap and target variance rising from 1.09 to 25.1 after conditioning. Neither mean-as-mode nor universal variance reduction is assumed.
 
@@ -16,7 +16,7 @@ The 45 Python and eleven Node tests include 100 precision-block Gaussian oracles
 
 ## Local density geometry
 
-[Open the geometry inspector](https://midya8.github.io/mixturelab/geometry.html) · [Derivative identities and bounded-ascent method](GEOMETRY.md)
+[Open the geometry inspector](https://midya8.github.io/gmm-em/geometry.html) · [Derivative identities and bounded-ascent method](GEOMETRY.md)
 
 Analytic input scores, full Hessians and component-posterior Jacobians for the same frozen models. A separate scalar browser implementation checks all 40 native geometry references and all eight finite-budget ascent traces. Each accepted standardized-input step retains its sufficient-ascent inequality. The full k=2/3/5 traces remain unfinished at 128 updates. A symmetric two-Gaussian control has score zero and curvature +3 at a strict local minimum, so even the norm stopping rule is explicitly not a mode certificate.
 
