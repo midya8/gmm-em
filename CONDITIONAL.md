@@ -62,7 +62,7 @@ The actual-Chrome conditional test applies all **160 reference cases through the
 
 ## Browser behavior
 
-[Conditional inspector](https://midya8.github.io/mixturelab/conditional.html). The initial source row is the first original test row and the initial mask observes the first three coordinates. Neither is chosen for quality or confidence. All 178 public rows and eight unchanged fitted models remain available. Input edits are explicit. Invalid input is not applied and the last valid model/source context remains in the exported witness.
+[Conditional inspector](https://midya8.github.io/gmm-em/conditional.html). The initial source row is the first original test row and the initial mask observes the first three coordinates. Neither is chosen for quality or confidence. All 178 public rows and eight unchanged fitted models remain available. Input edits are explicit. Invalid input is not applied and the last valid model/source context remains in the exported witness.
 
 The UI accepts observed standardized magnitudes up to 1000 to keep its drawing interface within a stated numerical bound, not to define plausible chemistry. The native API instead refuses values when its calculations cease to be finite. Unchecked input fields are disabled and never sent to conditioning; changing one does not change the conditional.
 
