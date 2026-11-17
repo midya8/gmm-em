@@ -2,7 +2,7 @@
 
 Differentiate **inputs** while keeping the saved model parameters fixed. The derivatives and bounded sufficient-ascent search do not retrain a mixture or change the split, scale, experiment report or test scores. Both use standard formulas, not a new mode-finding algorithm.
 
-[Live geometry inspector](https://midya8.github.io/mixturelab/geometry.html) · [Original experiment](METHOD.md)
+[Live geometry inspector](https://midya8.github.io/gmm-em/geometry.html) · [Original experiment](METHOD.md)
 
 ## 1. Analytic derivatives
 
